@@ -179,7 +179,7 @@ function loop() {
         for (let i=0; i<16; i++){
             board[i] = [0,0,0,0,0,0,0,0,0,0];
         }
-        pick = Math.floor(Math.random()*patterns.length);
+        pick = Math.floor(streak);
         for (let y=16; y<20; y++){
             board[y] = [8,8,8,8,8,8,8,8,8,8];
             for (let x=patterns[pick].charAt((y-16)*2); x<parseInt(patterns[pick].charAt((y-16)*2+1))+1; x++){
