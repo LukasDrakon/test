@@ -1,4 +1,4 @@
-const canvas = document.querySelector(".myCanvas");
+ const canvas = document.querySelector(".myCanvas");
 const width = (canvas.width = 800);
 const height = (canvas.height = 600);
 const ctx = canvas.getContext("2d");
@@ -313,7 +313,7 @@ function loop() {
                 board[i] = [0,0,0,0,0,0,0,0,0,0];
             }
             if (lines==4){
-                pick = Math.floor(Math.random()*patterns.length);
+                pick = Math.floor(streak);
                 streak++;
             } else {
                 streak = 0;
